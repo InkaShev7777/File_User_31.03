@@ -22,6 +22,7 @@ namespace OOP_31._03
             customer1.Purchase(sugar);
             //customer2.Purchase(sugar);
             manager1.AddCustomer(customer1,sugar);
+
             //manager1.AddCustomer(customer2);
         }
     }
