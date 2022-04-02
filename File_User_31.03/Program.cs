@@ -53,6 +53,7 @@ namespace File_User_31._03
             }
             File.AppendAllText("text.txt", "Max:\n"+mas[max].ToString());
             File.AppendAllText("text.txt", "Min:\n"+mas[min].ToString());
+
         }
     }
 }

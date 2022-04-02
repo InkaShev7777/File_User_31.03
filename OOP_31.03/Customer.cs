@@ -27,6 +27,5 @@ namespace OOP_31._03
                 Console.WriteLine("You dont have much money!!!\n");
             }
         }
-       
     }
 }
