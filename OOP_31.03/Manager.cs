@@ -16,9 +16,23 @@ namespace OOP_31._03
         {
             return $"{base.ToString()}\tSalary: {Salary}\n";
         }
-        public void AddCustomer(Customer customer,Produkt produkt)
+        public void AddCustomer(Customer customer)
         {
-            File.AppendAllText(Login + ".txt", customer.Name + " " + customer.LastName + " " + customer.Login + " " + customer.Password + " " + customer.Money + " "+produkt.Name+" "+produkt.Price+"\n");
+            File.AppendAllText(Login + ".txt", customer.Name + " " + customer.LastName + " " + customer.Login + " " + customer.Password + " " + customer.Money + "\n");
+        }
+        public void AddSalesHistory(Produkt produkt)
+        {
+            File.AppendAllText("History" + Login + ".txt", produkt.Name + " " + produkt.Price + "\n");
+        }
+        public void ReadFileCustomer()
+        {
+           string file= File.ReadAllText(Login + ".txt");
+            Console.WriteLine(file);
+        }
+        public void ReadFileSalesHistory()
+        {
+            string file = File.ReadAllText("History" + Login + ".txt");
+            Console.WriteLine(file);
         }
     }
 }

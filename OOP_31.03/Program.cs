@@ -21,8 +21,10 @@ namespace OOP_31._03
             Sugar sugar = new Sugar("Sugar", 50.60);
             customer1.Purchase(sugar);
             //customer2.Purchase(sugar);
-            manager1.AddCustomer(customer1,sugar);
-
+            manager1.AddCustomer(customer1);
+            manager1.AddSalesHistory(sugar);
+            manager1.ReadFileCustomer();
+            manager1.ReadFileSalesHistory();
             //manager1.AddCustomer(customer2);
         }
     }
